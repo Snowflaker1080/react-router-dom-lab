@@ -20,7 +20,7 @@ function MailboxForm({ addBox }) {
         <div className="box">
           <form onSubmit={handleSubmit}>
             <div className="field">
-              <label className="label">Box Owner</label>
+              <label className="label">Enter a Boxholder</label>
               <div className="control">
                 <input
                   className="input"
@@ -34,7 +34,7 @@ function MailboxForm({ addBox }) {
             </div>
 
             <div className="field">
-              <label className="label">Box Size</label>
+              <label className="label">Select a Box Size</label>
               <div className="control">
                 <div className="select">
                   <select

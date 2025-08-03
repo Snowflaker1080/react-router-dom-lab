@@ -6,6 +6,7 @@ import MailboxList from './components/MailboxList/MailboxList';
 import MailboxForm from './components/MailboxForm/MailboxForm';
 import MailboxDetails from './components/MailboxDetails/MailboxDetails';
 import LetterForm from './components/LetterForm/LetterForm';
+import postOfficeImage from './assets/Post Office Image.png';
 
 function App() {
   const [mailboxes, setMailboxes] = useState([]);
@@ -35,9 +36,15 @@ function App() {
                 <div className="has-text-centered">
                   <h1 className="title is-2">Post Office</h1>
                   <p className="subtitle is-5">Welcome! Use the navigation bar to get started.</p>
+
+                   <figure className="image is-3by2" style={{ maxWidth: '600px', margin: 'auto' }}>
+                    <img src={postOfficeImage} alt="Post Office" />
+                  </figure>
+
                 </div>
               }
             />
+
             <Route
               path="/mailboxes"
               element={<MailboxList mailboxes={mailboxes} />}
